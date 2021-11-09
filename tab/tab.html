@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title></title>
+<link rel="stylesheet" href="../css/styles.css"/>
+<script type="text/javascript" src="../js/jquery-1.9.1.js" ></script>
+<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+
+
+
+<script>
+
+$(document).ready(function()
+{
+    $("#tabBar1").click(function()
+    {
+		var height = $("#tab1").css( "height" );
+	
+		if(height=="50px")
+		{
+		   $("#tab1").animate({height: "100px"});
+		   $("#tab2").animate({height: "50px"});
+		   $("#tab3").animate({height: "50px"});
+		   $("#tab4").animate({height: "50px"});
+		   $("#tab5").animate({height: "50px"});
+		}
+		else
+		{
+		   $("#tab1").animate({height: "50px"});
+		}        
+    });
+	
+	$("#tabBar2").click(function()
+    {
+		var height = $("#tab2").css( "height" );
+	
+		if(height=="50px")
+		{
+		   $("#tab1").animate({height: "50px"});
+		   $("#tab2").animate({height: "100px"});
+		   $("#tab3").animate({height: "50px"});
+		   $("#tab4").animate({height: "50px"});
+		   $("#tab5").animate({height: "50px"});
+		}
+		else
+		{
+		   $("#tab2").animate({height: "50px"});
+		}        
+    });
+	
+	$("#tabBar3").click(function()
+    {
+		var height = $("#tab3").css( "height" );
+	
+		if(height=="50px")
+		{
+		   $("#tab1").animate({height: "50px"});
+		   $("#tab2").animate({height: "50px"});
+		   $("#tab3").animate({height: "100px"});
+		   $("#tab4").animate({height: "50px"});
+		   $("#tab5").animate({height: "50px"});
+		}
+		else
+		{
+		   $("#tab3").animate({height: "50px"});
+		}        
+    });
+	
+	$("#tabBar4").click(function()
+    {
+		var height = $("#tab4").css( "height" );
+	
+		if(height=="50px")
+		{
+		   $("#tab1").animate({height: "50px"});
+		   $("#tab2").animate({height: "50px"});
+		   $("#tab3").animate({height: "50px"});
+		   $("#tab4").animate({height: "100px"});
+		   $("#tab5").animate({height: "50px"});
+		}
+		else
+		{
+		   $("#tab4").animate({height: "50px"});
+		}        
+    });
+	
+	$("#tabBar5").click(function()
+    {
+		var height = $("#tab5").css( "height" );
+	
+		if(height=="50px")
+		{
+		   $("#tab1").animate({height: "50px"});
+		   $("#tab2").animate({height: "50px"});
+		   $("#tab3").animate({height: "50px"});
+		   $("#tab4").animate({height: "50px"});
+		   $("#tab5").animate({height: "100px"});
+		}
+		else
+		{
+		   $("#tab5").animate({height: "50px"});
+		}        
+    });
+});
+
+
+</script>
+ 
+
+</head>
+<body>
+
+  <div id="TabContainer">
+       
+	<div class="tabBox" id="tab1">
+	    <div class="tabTitleBar" id="tabBar1">
+		<p>Daily Income</p>
+	    </div>
+
+	    <p class="value"><label class="Rs">Rs.</label> 123456789<label class="cents">.99</label></p>
+	</div>
+	
+	<div class="tabBox" id="tab2">
+	    <div class="tabTitleBar" id="tabBar2">
+		<p>Daily Deposit Collection</p>
+	    </div>
+
+	    <p class="value"><label class="Rs">Rs.</label> 123456789<label class="cents">.99</label></p>
+	</div>
+	
+	<div class="tabBox" id="tab3">
+	    <div class="tabTitleBar" id="tabBar3">
+		<p>Daily No.of Items Hired</p>
+	    </div>
+
+	    <p class="value"><label class="Rs">Rs.</label> 123456789<label class="cents">.99</label></p>
+	</div>
+	
+	<div class="tabBox" id="tab4">
+	    <div class="tabTitleBar" id="tabBar4">
+		<p>Daily Arrears Deduction fromDeposits</p>
+	    </div>
+
+	    <p class="value"><label class="Rs">Rs.</label> 123456789<label class="cents">.99</label></p>
+	</div>
+	
+	<div class="tabBox" id="tab5">
+	    <div class="tabTitleBar" id="tabBar5">
+		<p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+	    </div>
+
+	    <p class="value"><label class="Rs">Rs.</label> 123456789<label class="cents">.99</label></p>
+	</div>
+
+  </div>
+
+
+</body>
+
